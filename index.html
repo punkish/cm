@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ContentMine</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Content</span>Mine
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden"><a href="#page-top"></a></li>
+                    <li><a class="page-scroll" href="#facts">Facts</a></li>
+                    <li><a class="page-scroll" href="#tools">Tools</a></li>
+                    <li><a class="page-scroll" href="#communities">Communities</a></li>
+                    <li><a class="page-scroll" href="#activities">Activities</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading"><span class="light">Content</span>Mine</h1>
+                        <p class="intro-text">ContentMine is using computers to liberate 100,000,000 facts from the scientific literature. Since facts are not copyrightable, text and datamining (TDM) for facts does not impinge on the copyright of their authors or publishers. ContentMine believes “The Right to Read is the Right to Mine.”</p>
+                        <a href="#facts" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="facts" class="container content-section">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Facts</h2>
+                <p>Facts are <i>generally</i> discovered, not invented. They have <i>no</i> or <i>very low</i> creativity, not enough to be copyrightable. Facts may include:</p>
+                <ul>
+                    <li><b>metadata</b> from articles such as title, author names, author institutions, DOI, etc.</li>
+                    <li><b>named entities</b> such as species, biological sequences, crystal data, chemicals, geographic locations, dates and time, periods, people and organizations, diseases, identifiers, genes, instruments and reagents</li>
+                    <li><b>phrases</b> that are statements about facts</li>
+                    <li><b>domain-specific compound objects</b> such as chemical compounds, tables, and phylogenetic trees</li>
+                    <li>supplemental data</li>
+                    <li>appendices</li>
+                </ul>
+                
+                <br><br>
+                
+                <img src="img/article.jpg" width="100%">
+                <br><br>
+                <p>Facts may be located in an article:</p>
+                <ul>
+                    <li>at a point</li>
+                    <li>in a phrase or a sentence</li>
+                    <li>in a section</li>
+                    <li>in a container such as figure, table, chart</li>
+                    <li>in the entire document</li>
+                    <li>in a collection of documents</li>
+                </ul>
+
+                <p>Facts are accompanied by statistics about their colocation and frequency.</p>
+                
+                <a href="#tools" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools" class="container content-section">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Tools</h2>
+                <p>ContentMine provides the following tools:</p>
+                <ul>
+                    <li><code>getpapers</code> for getting metadata, fulltexts or fulltext URLs that resolve into articles matching a search query</li>
+                    <li><code>quickscrape</code> for scraping articles from the websites of publishers and journals who otherwise don‘t provide direct access to the articles</li>
+                    <li><code>norma</code> for normalizing the downloaded content so a hodgepodge of formats such as  XML/SVG/PDF are converted into one standard, normalized, sectioned, scholarly HTML, that is easier to mine</li>
+                    <li><code>ami</code> is a framework for plugins that perform specialized extraction on output from <code>norma</code></li>
+                </ul>
+                
+                <a href="#communities" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="communities" class="container content-section">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+               <h2>Communities</h2>
+               <p>The currently targeted communities are:</p>
+                <ul>
+                    <li>clinical and animal trials</li>
+                    <li>crystallography</li>
+                    <li>phylogenetics</li>
+                    <li>taxonomy</li>
+                    <li>high energy physics</li>
+                    <li>social sciences and psychology</li>
+                </ul>
+                
+                <a href="#activities" class="btn btn-circle page-scroll">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities" class="container content-section">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Activities</h2>
+                <p>ContentMine is:</p>
+                <ul>
+                    <li>creating tools for TDM</li>
+                    <li>spreading awareness of TDM</li>
+                    <li>teaching how to do TDM</li>
+                    <li>doing advocacy to make TDM legally permissible as a copyright exception</li>
+                    <li>building community-specific templates for extracting facts</li>
+                    <li>fighting for justice and inclusiveness</li>
+                </ul>
+                
+                <p>Core activities of ContentMine are funded by <a href="https://www.shuttleworthfoundation.org/" target="_blank">The Shuttleworth Foundation</a>. We are very interested in hearing from new scientific communities and will be happy to carry out exploratory analyses, pursue grant funding jointly, or conduct projects where our goals are aligned.</p>
+                <!--
+                <p>If TDM can be done by existing ContentMine tools, expense reimbursement is sought only for fact extraction tasks. If specialized tools have to be developed then “at cost” reimbursement is sought. “At cost” reimbursement is also required for any travel and workshop expenses.</p>
+                -->
+                
+                <p><a href="mailto:contact@contentmine.org">contact@contentmine.org</a></p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://twitter.com/TheContentMine" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/ContentMine" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <!--
+                        <li>
+                            <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                        </li>
+                        -->
+                    </ul>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container text-center">
+            <p>made by <a href="http://punkish.org">punkish</a> and dedicated to the public domain under <a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 Public Domain Dedication</a></p>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
