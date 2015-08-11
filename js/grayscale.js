@@ -31,6 +31,8 @@ $('.navbar-collapse ul li a').click(function() {
 
 $('.half').click(function() {
     $('.full').hide();
+    $('.half').show();
+    $(this).toggle();
     $(this).next('.full').toggle();
 });
 
