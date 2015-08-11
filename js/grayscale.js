@@ -29,6 +29,11 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+$('.half').click(function() {
+    $('.full').hide();
+    $(this).next('.full').toggle();
+});
+
 // Google Maps Scripts
 // When the window has finished loading create our google map below
 // google.maps.event.addDomListener(window, 'load', init);
