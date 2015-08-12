@@ -13,7 +13,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/grayscale.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
+    <!-- <link href="css/jquery.accordion.css" rel="stylesheet"> -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -128,16 +128,73 @@
     <section id="communities" class="container content-section">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-               <h2>Communities</h2>
-               <p>The currently targeted communities are:</p>
-                <ul>
-                    <li><a href="communities/#clinical-and-animal-trials">Clinical and Animal Trials</a></li>
-                    <li><a href="communities/#crystallography">Crystallography</a></li>
-                    <li><a href="communities/#phylogenetics">Phylogenetics</a></li>
-                    <li><a href="communities/#taxonomy">Taxonomy</a></li>
-                    <li><a href="communities/#high-energy-physics">High Energy Physics</a></li>
-                    <li><a href="communities/#social-sciences-and-psychology">Social Sciences and Psychology</a></li>
-                </ul>
+                <h2>Communities</h2>
+                <p>The currently targeted communities are:</p>
+                <section id="only-one" data-accordion-group>
+                    <section data-accordion>
+                        <button data-control>Clinical and Animal Trials</button>
+                        <div data-content>
+                            <p>We are…</p>
+                            <ul>
+                                <li>we are…</li>
+                                <li>we are…</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section data-accordion>
+                        <button data-control>Crystallography</button>
+                        <div data-content>
+                            <p>We are…</p>
+                            <ul>
+                                <li>we are…</li>
+                                <li>we are…</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section data-accordion>
+                        <button data-control>Phylogenetics</button>
+                        <div data-content>
+                            <p>We are…</p>
+                            <ul>
+                                <li>we are…</li>
+                                <li>we are…</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section data-accordion>
+                        <button data-control>Taxonomy</button>
+                        <div data-content>
+                            <p>We are working with <a href="http://plazi.org" target="_blank">Plazi</a> to bridge the gap between thinking about a species and understanding everything about it. Toward that:</p>
+                            <ul>
+                                <li>we are building species and traits specific custom extraction templates that will work with our existing TDM tools</li>
+                                <li>we are helping Plazi scientists extract species names and their treatments from the published articles</li>
+                                <li>we are building RDF triples out of each atomic fact that may be queried via a RESTful interface</li>
+                                <li>we are training scientists in using these tools</li>
+                                <li>we are pursuing joint-funding opportunities to continue further development of the tools and to train scientists worldwide</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section data-accordion>
+                        <button data-control>High Energy Physics</button>
+                        <div data-content>
+                            <p>We are…</p>
+                            <ul>
+                                <li>we are…</li>
+                                <li>we are…</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section data-accordion>
+                        <button data-control>Social Sciences and Psychology</button>
+                        <div data-content>
+                            <p>We are…</p>
+                            <ul>
+                                <li>we are…</li>
+                                <li>we are…</li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
                 
                 <a href="#activities" class="btn btn-circle page-scroll">
                     <i class="fa fa-angle-double-down animated"></i>
@@ -192,8 +249,23 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.accordion.js"></script>
     <script src="js/grayscale.js"></script>
 
+    <script type="text/javascript">
+        $(document).ready(function() {    
+            $('#only-one [data-accordion]').accordion({
+                controlElement: '[data-control]',
+                contentElement: '[data-content]',
+                groupElement: '[data-accordion-group]',
+                singleOpen: true,
+                transitionEasing: 'cubic-bezier(0.455, 0.030, 0.515, 0.955)',
+                transitionSpeed: 200
+            });
+        });
+    </script>
 </body>
 
 </html>
+
+
